@@ -4,20 +4,13 @@
 
 Powered by BigYusufff. Check some of my awesome projects out https://yusuflateef.vercel.app/
 
-[![NPM version][npm-image]][npm-url] [![dumi](https://img.shields.io/badge/docs%20by-dumi-blue?style=flat-square)](https://github.com/umijs/dumi) [![build status][github-actions-image]][github-actions-url] [![Test coverage][coveralls-image]][coveralls-url] [![Dependencies][david-image]][david-url] [![DevDependencies][david-dev-image]][david-dev-url] [![npm download][download-image]][download-url] [![bundle size][bundlephobia-image]][bundlephobia-url]
+[![NPM version][npm-image]][npm-url] [![dumi](https://img.shields.io/badge/docs%20by-dumi-blue?style=flat-square)](https://github.com/umijs/dumi) [![build status][github-actions-image]][github-actions-url] [![Test coverage][coveralls-image]][coveralls-url] [![npm download][download-image]][download-url] [![bundle size][bundlephobia-image]][bundlephobia-url]
 
 [npm-image]: http://img.shields.io/npm/v/react-navbar-menu.svg?style=flat-square
 [npm-url]: http://npmjs.org/package/react-navbar-menu
 [github-actions-image]: https://github.com/BigYusuf/menu-lib/workflows/CI/badge.svg
 [github-actions-url]: https://github.com/BigYusuf/menu-lib/actions
 [circleci-image]: https://img.shields.io/circleci/BigYusuf/menu-lib/master?style=flat-square
-[circleci-url]: https://circleci.com/gh/react-component/menu
-[coveralls-image]: https://img.shields.io/coveralls/react-component/menu.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/react-component/menu?branch=master
-[david-url]: https://david-dm.org/react-component/menu
-[david-image]: https://david-dm.org/BigYusuf/menu-lib/status.svg?style=flat-square
-[david-dev-url]: https://david-dm.org/react-component/menu?type=dev
-[david-dev-image]: https://david-dm.org/BigYusuf/menu-lib/dev-status.svg?style=flat-square
 [download-image]: https://img.shields.io/npm/dm/react-navbar-menu.svg?style=flat-square
 [download-url]: https://npmjs.org/package/react-navbar-menu
 [bundlephobia-url]: https://bundlephobia.com/result?p=react-navbar-menu

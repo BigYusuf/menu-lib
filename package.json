@@ -1,6 +1,6 @@
 {
   "name": "react-navbar-menu",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A mobile friendly menu bar/ navbar menu. Easy to use and modify",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
