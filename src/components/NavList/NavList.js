@@ -8,6 +8,7 @@ export default function NavList({degree,gradcolor1,gradcolor2,
     padding: `${0.4}rem`,
     display: "flex",
     borderRadius: `${5}rem`,
+    textDecoration: "none",
     }
   const ActiveNav__link = {
     background: degree ? `linear-gradient(${degree}, ${gradcolor1}, ${gradcolor2})`: activeColor,
@@ -16,6 +17,7 @@ export default function NavList({degree,gradcolor1,gradcolor2,
     display: "flex",
     borderRadius: `${5}rem`,
     color: activeIconColor,
+    textDecoration: "none",
     }
   return (
     <li className="">
