@@ -9,4 +9,4 @@ script:
   - npm run test:coveralls
 
 notifications:
-  emmail: false
+  email: false
