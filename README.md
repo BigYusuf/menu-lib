@@ -4,13 +4,16 @@
 
 Powered by BigYusufff. Check some of my awesome projects out https://yusuflateef.vercel.app/
 
-[![NPM version][npm-image]][npm-url] [![dumi](https://img.shields.io/badge/docs%20by-dumi-blue?style=flat-square)](https://github.com/umijs/dumi) [![build status][github-actions-image]][github-actions-url] [![Test coverage][coveralls-image]][coveralls-url] [![npm download][download-image]][download-url] [![bundle size][bundlephobia-image]][bundlephobia-url]
+[![NPM version][npm-image]][npm-url] [![dumi](https://img.shields.io/badge/docs%20by-dumi-blue?style=flat-square)](https://github.com/BigYusuf/menu-lib) [![build status][github-actions-image]][github-actions-url] [![Coverage Status][coveralls-image]][coveralls-url] [![npm download][download-image]][download-url] [![bundle size][bundlephobia-image]][bundlephobia-url]
 
 [npm-image]: http://img.shields.io/npm/v/react-navbar-menu.svg?style=flat-square
 [npm-url]: http://npmjs.org/package/react-navbar-menu
 [github-actions-image]: https://github.com/BigYusuf/menu-lib/workflows/CI/badge.svg
 [github-actions-url]: https://github.com/BigYusuf/menu-lib/actions
 [circleci-image]: https://img.shields.io/circleci/BigYusuf/menu-lib/master?style=flat-square
+[coveralls-image]: https://coveralls.io/repos/github/BigYusuf/menu-lib/badge.svg?branch=master
+
+[coveralls-url]: (https://coveralls.io/github/BigYusuf/menu-lib?branch=master)
 [download-image]: https://img.shields.io/npm/dm/react-navbar-menu.svg?style=flat-square
 [download-url]: https://npmjs.org/package/react-navbar-menu
 [bundlephobia-url]: https://bundlephobia.com/result?p=react-navbar-menu
