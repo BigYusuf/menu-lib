@@ -6,7 +6,9 @@ node_modules
 /.pnp.js
 
 # testing
-/coverage
+coverage
+src/components/Navbar/__snapshots__
+__snapshots__
 
 # production
 /build
