@@ -3,3 +3,23 @@
     margin: 0;
     padding: 0;
 }
+.container{
+    margin: 20px;
+}
+.icon-eye:before {
+    color: green;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    font-size: 30px;
+    background: #fff;
+}
+.list-items{
+    position: relative;
+}
+.movement {
+    position: absolute;
+    top: -33px;
+    left: -16px;
+}
+
+
