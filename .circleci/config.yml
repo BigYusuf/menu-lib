@@ -3,7 +3,11 @@ version: 2.1
 jobs:
     run_tests:
       docker:
+<<<<<<< HEAD
         - image: circleci/node:10
+=======
+        - image: circleci/node:16.15.1
+>>>>>>> 686034381eb17f9764c9cdef7bc13b16b1008deb
         steps:
         - checkout
         - run:
