@@ -30,11 +30,11 @@ export const Navbar = ({Position,ShadowIndex, ShadowColor, Gap, borderRadius, Ic
   
     return (
       <div className="">
-          <div className={""} style={nav__menu}>
+          <div className="" style={nav__menu}>
             <ul className=""style={nav__list}>
-                {<NavList url={url1} icon={icon1} active={active===url1} 
+                <NavList url={url1} icon={icon1} active={active===url1} 
                 setActive={setActive} Font={Font} activeColor={activeColor} MyFunction={MyFunction} ReactRouterDom={ReactRouterDom}
-                IconColor={IconColor} activeIconColor={activeIconColor} degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2} />}
+                IconColor={IconColor} activeIconColor={activeIconColor} degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2} />
                 
                 {MenuNumber < 2 ? '': <NavList url={url2} icon={icon2} active={active===url2} 
                 setActive={setActive} Font={Font} activeColor={activeColor} MyFunction={MyFunction} ReactRouterDom={ReactRouterDom}
@@ -55,10 +55,8 @@ export const Navbar = ({Position,ShadowIndex, ShadowColor, Gap, borderRadius, Ic
                 degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2}
                 active={active===url5} setActive={setActive} Font={Font} MyFunction={MyFunction} ReactRouterDom={ReactRouterDom}
                 activeColor={activeColor} IconColor={IconColor} activeIconColor={activeIconColor} />}
-               
             </ul>
           </div>
-
       </div>
     )
 }

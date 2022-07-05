@@ -19,16 +19,11 @@ export const Navbar2 = ({Position,ShadowColor,ShadowIndex,Gap,itemWidth, Height,
     backgroundColor,
     borderRadius: borderRadius ? borderRadius : 12,
     padding: `${0}rem ${2.25}rem`,
-    //display: "flex",
-   // justifyContent: "center",
-   // alignItems: "center",
    textAlign: 'center',   
    boxShadow: ShadowColor ? `${0} ${5}px ${ShadowIndex? ShadowIndex: 10 }px ${ShadowColor}`: '', 
   }
   const nav__list = {
     display: "flex",
-    // justifyContent: "center",
-      
     height: Height? Height: '',
     justifyContent: window.innerWidth<=400 ? "space-between": "center",
     position: "relative",

@@ -3,7 +3,7 @@ import NavList4 from '../NavList/NavList4';
 import '../../navbar.css'
 
 export const Navbar4 = ({WebBackground,Position,ShadowColor,ShadowIndex,Gap,itemWidth, Height, borderRadius, IconHeight, IconColor, Center,Width,MenuNumber,backgroundColor, 
-  degree,gradcolor1, gradcolor2, activeIconColor, text1,text2,text3,text4,text5, Indicator,
+  degree,gradcolor1, gradcolor2, activeIconColor, text1,text2,text3,text4,text5, Indicator, activeBorderColor,
   Font, activeColor,url1, url2, url3, url4, url5, iconA1, iconB1, iconA2, iconB2, iconA3, iconB3, iconA4, iconB4, iconA5, iconB5}) => {
   const [active, setActive] = useState(false)
   
@@ -41,14 +41,11 @@ export const Navbar4 = ({WebBackground,Position,ShadowColor,ShadowIndex,Gap,item
     background: activeColor,
     height: 36,
     width: 25,
-    //height: itemWidth ? itemWidth: window.innerWidth<=350? (window.innerWidth-10)/MenuNumber : 70,
-    //width: itemWidth ? itemWidth: window.innerWidth<=350? (window.innerWidth-10)/MenuNumber : 70,
     bottom: `${-19}px`,
     borderRadius: `${50}%`,
-   // border: `${6}px solid white`,
+    border: activeBorderColor? `${6}px solid ${activeBorderColor}`:'',
     transition: `${0.4}s`,
     opacity: active? 1 : 0,
-    //left: `${34}px`,
     left: 
     active===url1 ? `${itemWidth ? itemWidth: (window.innerWidth<=350 ? 20 + (((window.innerWidth-10)/MenuNumber) * 0) : 22 +(70 * 0)) * 1}px`: 
     active===url2 ? `${itemWidth ? itemWidth: (window.innerWidth<=350 ? 20 + (((window.innerWidth-10)/MenuNumber) * 1) : 22 +(70 * 1)) * 1}px`:  

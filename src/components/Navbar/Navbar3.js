@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import NavList3 from '../NavList/NavList3';
 import '../../navbar.css'
 
 export const Navbar3 = ({WebBackground, Position,ShadowColor,ShadowIndex,Gap,itemWidth, Height, borderRadius, IconHeight, IconColor, Center,Width,MenuNumber,backgroundColor, 
-  degree,gradcolor1, gradcolor2, activeIconColor, text1,text2,text3,text4,text5, Indicator,
+  degree,gradcolor1, gradcolor2, activeIconColor, text1,text2,text3,text4,text5, Indicator,activeBorderColor,
   Font, activeColor,url1, url2, url3, url4, url5, icon1, icon2, icon3, icon4, icon5}) => {
   const [active, setActive] = useState(false)
   
@@ -42,15 +42,15 @@ export const Navbar3 = ({WebBackground, Position,ShadowColor,ShadowIndex,Gap,ite
     width: itemWidth ? itemWidth: window.innerWidth<=350? (window.innerWidth-20)/MenuNumber : 70,
     top: `${-50}%`,
     borderRadius: `${50}%`,
-    border: `${6}px solid white`,
+    border: activeBorderColor? `${6}px solid ${activeBorderColor}`:'',
     transition: `${0.4}s`,
     opacity: active? 1 : 0,
     left: 
-    active===url1 ? `${itemWidth ? itemWidth: (window.innerWidth<=350 ?(window.innerWidth-10)/MenuNumber : 70) * 0}px`: 
-    active===url2 ? `${itemWidth ? itemWidth: (window.innerWidth<=350 ?(window.innerWidth-10)/MenuNumber : 70) * 1}px`:  
-    active===url3 ? `${itemWidth ? itemWidth: (window.innerWidth<=350 ?(window.innerWidth-10)/MenuNumber : 70) * 2}px`: 
-    active===url4 ? `${itemWidth ? itemWidth: (window.innerWidth<=350 ?(window.innerWidth-10)/MenuNumber : 70) * 3}px`: 
-    active===url5 ? `${itemWidth ? itemWidth: (window.innerWidth<=350 ?(window.innerWidth-10)/MenuNumber : 70) * 4}px`: '',
+        active===url1 ? `${itemWidth ? itemWidth: (window.innerWidth<=350 ?(window.innerWidth-10)/MenuNumber : 70) * 0}px`: 
+        active===url2 ? `${itemWidth ? itemWidth: (window.innerWidth<=350 ?(window.innerWidth-10)/MenuNumber : 70) * 1}px`:  
+        active===url3 ? `${itemWidth ? itemWidth: (window.innerWidth<=350 ?(window.innerWidth-10)/MenuNumber : 70) * 2}px`: 
+        active===url4 ? `${itemWidth ? itemWidth: (window.innerWidth<=350 ?(window.innerWidth-10)/MenuNumber : 70) * 3}px`: 
+        active===url5 ? `${itemWidth ? itemWidth: (window.innerWidth<=350 ?(window.innerWidth-10)/MenuNumber : 70) * 4}px`: '',
   }
   const indicator1={
     content: '',
@@ -74,12 +74,6 @@ export const Navbar3 = ({WebBackground, Position,ShadowColor,ShadowIndex,Gap,ite
     right: `${-22}px`,
     transition: `${0.4}s`,
   }
-  useEffect(() => {
-    if(active){
-      //console.log((window.innerWidth-10)/MenuNumber)
-    }
-  }, [active])
-  
     return (
       <div className="">
           <div className={""} style={nav__menu}>
