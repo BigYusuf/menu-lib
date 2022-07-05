@@ -23,7 +23,6 @@ __snapshots__
 .env
 .storybook
 dist
-menu-lib
 
 npm-debug.log*
 yarn-debug.log*
