@@ -6,6 +6,7 @@ export const Navbar = ({Position,ShadowIndex, ShadowColor, Gap, borderRadius, Ic
   degree,gradcolor1, gradcolor2, activeIconColor, MyFunction, ReactRouterDom,
   Font, activeColor,url1, url2, url3, url4, url5, icon1, icon2, icon3, icon4, icon5}) => {
   const [active, setActive] = useState(false)
+  
   const nav__menu = {
     position: Position ? "fixed":'',
     bottom: (Position === "Bottom" || Position=== "bottom") ? 0 : '',
@@ -21,38 +22,38 @@ export const Navbar = ({Position,ShadowIndex, ShadowColor, Gap, borderRadius, Ic
     margin: Center ? `${Gap ? Gap: 1}rem auto`: 0,  
     boxShadow: ShadowColor ? `${0} ${5}px ${ShadowIndex? ShadowIndex: 10 }px ${ShadowColor}`: '', 
   }
+  
   const nav__list = {
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
       listStyle: "none",
   }
-  
     return (
       <div className="">
           <div className="" style={nav__menu}>
             <ul className=""style={nav__list}>
-                <NavList url={url1} icon={icon1} active={active===url1} 
+                <NavList url={url1} icon={icon1} active={active===url1} id={icon1}
                 setActive={setActive} Font={Font} activeColor={activeColor} MyFunction={MyFunction} ReactRouterDom={ReactRouterDom}
                 IconColor={IconColor} activeIconColor={activeIconColor} degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2} />
                 
-                {MenuNumber < 2 ? '': <NavList url={url2} icon={icon2} active={active===url2} 
+                {MenuNumber < 2 ? '': <NavList url={url2} icon={icon2} active={active===url2}id={icon2}
                 setActive={setActive} Font={Font} activeColor={activeColor} MyFunction={MyFunction} ReactRouterDom={ReactRouterDom}
                 degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2} 
                 IconColor={IconColor} activeIconColor={activeIconColor} />}
                 
                 {MenuNumber < 3 ? '': <NavList url={url3} icon={icon3} 
-                degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2}
+                degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2} id={icon3}
                 active={active===url3} setActive={setActive} Font={Font} MyFunction={MyFunction} ReactRouterDom={ReactRouterDom}
                 activeColor={activeColor} IconColor={IconColor} activeIconColor={activeIconColor} />}
                 
                 {MenuNumber < 4 ? '': <NavList url={url4} icon={icon4} 
-                degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2}
+                degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2} id={icon4}
                 active={active===url4} setActive={setActive} Font={Font} MyFunction={MyFunction} ReactRouterDom={ReactRouterDom}
                 activeColor={activeColor} IconColor={IconColor} activeIconColor={activeIconColor} />}
                 
                 {MenuNumber < 5 ? '': <NavList url={url5} icon={icon5} 
-                degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2}
+                degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2} id={icon5}
                 active={active===url5} setActive={setActive} Font={Font} MyFunction={MyFunction} ReactRouterDom={ReactRouterDom}
                 activeColor={activeColor} IconColor={IconColor} activeIconColor={activeIconColor} />}
             </ul>

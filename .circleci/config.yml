@@ -28,7 +28,10 @@ jobs:
             - ~/.npm
       - run:
           name: Run Tests
-          command: npm run test
+          command: npm run test:coveralls1
+      - run:
+          name: Run Build
+          command: npm run build-lib
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:

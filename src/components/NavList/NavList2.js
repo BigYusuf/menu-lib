@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function NavList2({ itemWidth, MyFunction,text, degree,gradcolor1,gradcolor2,Gap,
+export default function NavList2({ itemWidth, MyFunction,text, degree,gradcolor1,gradcolor2,Gap, id,
   IconColor,activeColor,textColor,activeTextColor, activeIconColor,MenuNumber, Font, url, icon, active,setActive}) {
   const list={
    // width: itemWidth ? itemWidth: window.innerWidth<=350? (window.innerWidth-10)/MenuNumber : 70,
@@ -48,7 +48,7 @@ export default function NavList2({ itemWidth, MyFunction,text, degree,gradcolor1
     fontSize: Font? Font :`${14}px`,
   lineHeight: `${40}px`,
   borderRadius: `${5}px`,
-  margin: `${0} ${Gap ? Gap: 5}px`,
+  margin: Gap ? `${0} ${Gap}px`: `${0} ${5}px`,
   
     }
     const link__icon={
@@ -73,8 +73,8 @@ export default function NavList2({ itemWidth, MyFunction,text, degree,gradcolor1
   }
   
   return (
-    <li style={list} onClick={MyFunction} className=''>
-        <a href={url} onClick={()=> setActive(url)} style={active ? ActiveNav__link: Nav__link}>
+    <li data-testid={id} className="menu__item" onClick={()=> setActive(url)} style={list} >
+        <a href={url} data-testid={url} onClick={MyFunction} style={active ? ActiveNav__link: Nav__link}>
             <i style={active ? Activelink__icon : link__icon}>
               <span className={icon}></span>
             </i>   

@@ -32,27 +32,27 @@ export const Navbar2 = ({Position,ShadowColor,ShadowIndex,Gap,itemWidth, Height,
       <div className="">
           <div className={""} style={nav__menu}>
             <ul className=""style={nav__list}>
-                {<NavList2 url={url1} icon={icon1} active={active===url1} 
+                {<NavList2 url={url1} icon={icon1} active={active===url1} id={icon1}
                 setActive={setActive} Font={Font} activeColor={activeColor} text={text1} MenuNumber={MenuNumber} 
                 IconColor={IconColor} itemWidth={itemWidth}IconHeight={IconHeight} activeIconColor={activeIconColor} 
                 degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2} />}
                 
                 {MenuNumber < 2 ? '': <NavList2 url={url2} icon={icon2} active={active===url2} 
-                setActive={setActive} Font={Font} activeColor={activeColor} text={text2}
+                setActive={setActive} Font={Font} activeColor={activeColor} text={text2} id={icon2}
                 degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2}  MenuNumber={MenuNumber} 
                 IconColor={IconColor}itemWidth={itemWidth} activeIconColor={activeIconColor} />}
                 
-                {MenuNumber < 3 ? '': <NavList2 url={url3} icon={icon3} text={text3} 
+                {MenuNumber < 3 ? '': <NavList2 url={url3} icon={icon3} text={text3} id={icon3}
                 degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2}
                 active={active===url3} setActive={setActive} Font={Font} MenuNumber={MenuNumber} 
                 activeColor={activeColor}itemWidth={itemWidth} IconColor={IconColor} activeIconColor={activeIconColor} />}
                 
-                {MenuNumber < 4 ? '': <NavList2 url={url4} icon={icon4} text={text4}
+                {MenuNumber < 4 ? '': <NavList2 url={url4} icon={icon4} text={text4} id={icon4}
                 degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2}
                 active={active===url4} setActive={setActive} Font={Font}  MenuNumber={MenuNumber} 
                 activeColor={activeColor}itemWidth={itemWidth} IconColor={IconColor} activeIconColor={activeIconColor} />}
                 
-                {MenuNumber < 5 ? '': <NavList2 url={url5} icon={icon5} text={text5}
+                {MenuNumber < 5 ? '': <NavList2 url={url5} icon={icon5} text={text5} id={icon5}
                 degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2}
                 active={active===url5} setActive={setActive} Font={Font} MenuNumber={MenuNumber} 
                 activeColor={activeColor}itemWidth={itemWidth} IconColor={IconColor} activeIconColor={activeIconColor} />}

@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function NavList({degree,gradcolor1,gradcolor2,
-  IconColor,activeColor, activeIconColor, Font, url, icon, active,setActive, MyFunction, ReactRouterDom}) {
+export default function NavList({degree,gradcolor1,gradcolor2, id,
+  IconColor,activeColor, activeIconColor, Font, url, icon, active,setActive, MyFunction}) {
   const Nav__link = {
     color: IconColor,
     fontSize: Font ? Font: `${1.25}rem`,
@@ -20,18 +20,10 @@ export default function NavList({degree,gradcolor1,gradcolor2,
     textDecoration: "none",
     }
   return (
-    <li className="" onClick={MyFunction}>
-      {ReactRouterDom ? 
-      (
-        <Link to={url} onClick={()=> setActive(url)} style={active ? ActiveNav__link: Nav__link}>
-            <i className={icon}></i>
-        </Link>
-      ) :
-      (
-        <a href={url} onClick={()=> setActive(url)} style={active ? ActiveNav__link: Nav__link}>
+    <li data-testid={id} className="menu__item" onClick={MyFunction}>
+        <a href={url} data-testid={url} onClick={()=> setActive(url)} style={active ? ActiveNav__link: Nav__link}>
             <i className={icon}></i>
         </a>
-      )}
     </li>
   )
 }

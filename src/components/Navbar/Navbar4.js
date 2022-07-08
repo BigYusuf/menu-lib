@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import NavList4 from '../NavList/NavList4';
 import '../../navbar.css'
 
@@ -76,38 +76,33 @@ const indicator2={
     right: `${-15}px`,
     transition: `${0.4}s`,
   }
-  useEffect(() => {
-    if(active){
-      //console.log((window.innerWidth-10)/MenuNumber)
-    }
-  }, [active])
   
     return (
       <div className="">
           <div className={""} style={nav__menu}>
             <ul className=""style={nav__list}>
                 {<NavList4 url={url1} iconB={iconB1} iconA={iconA1} active={active===url1} 
-                setActive={setActive} Font={Font} activeColor={activeColor} text={text1} MenuNumber={MenuNumber} Indicator={Indicator}
+                setActive={setActive} Font={Font} activeColor={activeColor} text={text1} id={1} MenuNumber={MenuNumber} Indicator={Indicator}
                 IconColor={IconColor} itemWidth={itemWidth}IconHeight={IconHeight} activeIconColor={activeIconColor} 
                 degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2} />}
                 
                 {MenuNumber < 2 ? '': <NavList4 url={url2} iconB={iconB2} iconA={iconA2} active={active===url2} 
-                setActive={setActive} Font={Font} activeColor={activeColor} text={text2}
+                setActive={setActive} Font={Font} activeColor={activeColor} text={text2} id={2}
                 degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2}  MenuNumber={MenuNumber} Indicator={Indicator}
                 IconColor={IconColor}itemWidth={itemWidth} activeIconColor={activeIconColor} />}
                 
                 {MenuNumber < 3 ? '': <NavList4 url={url3} iconB={iconB3} iconA={iconA3} text={text3} 
-                degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2}
+                degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2} id={3}
                 active={active===url3} setActive={setActive} Font={Font} MenuNumber={MenuNumber} Indicator={Indicator}
                 activeColor={activeColor}itemWidth={itemWidth} IconColor={IconColor} activeIconColor={activeIconColor} />}
                 
                 {MenuNumber < 4 ? '': <NavList4 url={url4} iconB={iconB4} iconA={iconA4} text={text4}
-                degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2}
+                degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2} id={4}
                 active={active===url4} setActive={setActive} Font={Font}  MenuNumber={MenuNumber} Indicator={Indicator}
                 activeColor={activeColor}itemWidth={itemWidth} IconColor={IconColor} activeIconColor={activeIconColor} />}
                 
                 {MenuNumber < 5 ? '': <NavList4 url={url5} iconB={iconB5} iconA={iconA5} text={text5}
-                degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2}
+                degree={degree} gradcolor1={gradcolor1} gradcolor2={gradcolor2} id={5}
                 active={active===url5} setActive={setActive} Font={Font} MenuNumber={MenuNumber} Indicator={Indicator}
                 activeColor={activeColor}itemWidth={itemWidth} IconColor={IconColor} activeIconColor={activeIconColor} />}
                

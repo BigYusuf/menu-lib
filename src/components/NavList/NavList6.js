@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function NavList6({ itemWidth, activeBorderColor,text, degree,gradcolor1,gradcolor2,
-  IconColor,activeColor, activeIconColor,MenuNumber, Font, url, icon, active,setActive}) {
+  IconColor,activeColor, activeIconColor,id,MenuNumber, Font, url, icon, active,setActive}) {
   const list={
    width: itemWidth ? itemWidth: window.innerWidth<=370? (window.innerWidth-10)/MenuNumber : 60,
     //listStyle: 'none',
@@ -79,13 +79,13 @@ export default function NavList6({ itemWidth, activeBorderColor,text, degree,gra
     transition: ` ${0.4}s`,
   }
   return (
-    <div style={active? activeList : list}onClick={()=> setActive(url)} className=''>
+    <a href={url}data-testid={id} id={id} style={active? activeList : list} onClick={()=> setActive(url)} className='menu__item'>
       {/*<a href={url} style={active ? ActiveNav__link: Nav__link}>*/}
             <i style={active ? Activelink__icon : link__icon}>
               <span className={icon}></span>
             </i>
             <span style={active ? Activelink__text : link__text}>{text}</span>
             {/*</a>*/}
-    </div>
+    </a>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const SocialList2 = ({ MyFunction,Gap, backgroundColor,itemWidth, Width, activeBorderColor,text, degree,gradcolor1,gradcolor2,
-    IconColor,activeColor,ShadowColor,ShadowIndex, activeIconColor,MenuNumber, Font, url, icon, active,setActive})  => {
+export const SocialList2 = ({ MyFunction,Gap,borderRadius, backgroundColor,itemWidth, Width, activeBorderColor,text, degree,gradcolor1,gradcolor2, id,
+    IconColor,activeColor,ShadowColor,ShadowIndex, activeIconColor, Font, url, icon, active,setActive})  => {
         const wrapper={
             display: 'inline-block',
             height: itemWidth? itemWidth:`${60}px`,
@@ -9,7 +9,7 @@ export const SocialList2 = ({ MyFunction,Gap, backgroundColor,itemWidth, Width, 
             float: 'left',
             margin: Gap?`${0} ${Gap}px` :`${0} ${5}px`,
           //  background: backgroundColor,
-            borderRadius: 50,
+            borderRadius: borderRadius? borderRadius : 50,
             cursor: 'pointer',
           //  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             boxShadow: ShadowColor ? `${0} ${5}px ${ShadowIndex? ShadowIndex: 10 }px ${ShadowColor}`: '', 
@@ -92,9 +92,9 @@ export const SocialList2 = ({ MyFunction,Gap, backgroundColor,itemWidth, Width, 
         lineHeight: itemWidth? `${itemWidth}px`:`${60}px`,
     }
   return (
-    <div style={active? activeWrapper: wrapper} onMouseLeave={()=> setActive(!active)}
-      onMouseEnter={()=> setActive(icon)}>
-        <a href={url}onClick={MyFunction}>
+    <div data-testid={id} style={active? activeWrapper: wrapper} onMouseLeave={()=> setActive(!active)}
+      onMouseEnter={()=> setActive(icon)} className='social__item'>
+        <a href={url}onClick={MyFunction} data-testid={url}>
             <div style={active? activeIcon__style: icon__style} className=''><i className={icon}></i></div>
             <span style={text__style}>{text}</span>
         </a>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function NavList4({ itemWidth, Indicator,text, degree,gradcolor1,gradcolor2,
+export default function NavList4({ itemWidth, Indicator,text, degree,gradcolor1,gradcolor2, id,
   IconColor,activeColor, activeIconColor,MenuNumber, Font, url, iconA, iconB, active,setActive}) {
   const list={
     width: itemWidth ? itemWidth: window.innerWidth<=350? (window.innerWidth-10)/MenuNumber : 70,
@@ -72,8 +72,8 @@ export default function NavList4({ itemWidth, Indicator,text, degree,gradcolor1,
         transition: ` ${0.4}s`,
     }
   return (
-    <li style={list} className=''>
-        <a href={url} onClick={()=> setActive(url)} style={active ? ActiveNav__link: Nav__link}>
+    <li style={list} data-testid={id} className='menu__item'>
+        <a href={url}data-testid={url} onClick={()=> setActive(url)} style={active ? ActiveNav__link: Nav__link}>
             <i style={active ? Activelink__icon : link__icon}>
               <span className={iconA}></span>
             </i>
