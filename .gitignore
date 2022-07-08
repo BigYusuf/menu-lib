@@ -22,7 +22,6 @@ __snapshots__
 /.env
 .env
 .storybook
-dist
 .coveralls.yml
 npm-debug.log*
 yarn-debug.log*

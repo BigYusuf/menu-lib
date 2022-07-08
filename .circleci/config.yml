@@ -28,7 +28,7 @@ jobs:
             - ~/.npm
       - run:
           name: Run Tests
-          command: npm run test:coveralls1
+          command: npm run test
       - run:
           name: Run Build
           command: npm run build-lib
