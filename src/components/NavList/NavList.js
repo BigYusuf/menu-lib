@@ -21,7 +21,7 @@ export default function NavList({degree,gradcolor1,gradcolor2, id,
     }
   return (
     <li data-testid={id} className="menu__item" onClick={MyFunction}>
-        <a href={url}  onClick={()=> setActive(url)} style={active ? ActiveNav__link: Nav__link}>
+        <a href={url} data-testid={url} onClick={()=> setActive(url)} style={active ? ActiveNav__link: Nav__link}>
             <i className={icon}></i>
         </a>
     </li>
